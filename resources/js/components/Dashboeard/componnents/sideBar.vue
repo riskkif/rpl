@@ -6,7 +6,7 @@
         <div>
             <a href="#" class="nav__link nav__logo">
                  <i class='bx bxs-car bx-flip-horizontal bx-tada  nav__icon' ></i>
-                <span class="nav__logo-name">WeekCar</span>
+                <span class="nav__logo-name">Dashboard</span>
             </a>
 
             <div class="nav__list">
@@ -21,19 +21,19 @@
 
                     <a href="/index" class="nav__link">
                         <i class='bx bx-show-alt nav__icon'></i>
-                        <span class="nav__name">Visit Site</span>
+                        <span class="nav__name">Halaman Booking</span>
                     </a>
                         <router-link :to="{name : 'Companies'}"  class="nav__link">
                             <i class='bx bxs-category bx-rotate-90 mr-1' style="margin-right: 10px !important" ></i>
-                            <span class="nav__name" >Companies</span>
+                            <span class="nav__name" >Brand / Company</span>
                         </router-link>
                           <router-link :to="{name : 'Cars'}"  class="nav__link">
                             <i class='bx  bx-car  mr-1' style="margin-right: 10px !important" ></i>
-                            <span class="nav__name" >Cars</span>
+                            <span class="nav__name" >Model Kendaraan</span>
                         </router-link>
                          <router-link :to="{name : 'Commands'}"  class="nav__link">
                             <i class='bx  bx-command  mr-1' style="margin-right: 10px !important" ></i>
-                            <span class="nav__name" >Commands</span>
+                            <span class="nav__name" >Riwayat Booking</span>
                         </router-link>
 
                      <!-- <div class="nav__dropdown">

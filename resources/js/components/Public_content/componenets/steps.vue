@@ -1,6 +1,6 @@
 <template>
     <div class="steps-section">
-           <h1 class="b-title steps-title">Car rental steps</h1>
+           <h1 class="b-title steps-title">Cara Booking</h1>
 
            <div class="step-container">
                <!-- <div class="step-content">
@@ -12,24 +12,23 @@
                </div> -->
                 <div class="step-content stp-1">
                   <i class='bx bx-calendar step-icon' ></i>
-                  <h3 class="step-title mb-3">Pick-Up Date</h3>
-                  <p class="step-desc">
-                     Select the date you want in the car. If not booked on this date.You must also choose the timing of returning the car.
+                  <h3 class="step-title mb-3">Tanggal Pinjam</h3>
+                  <p class="step-desc">         
+                    Pilih tanggal yang Anda inginkan untuk mobil. Jika tidak tersedia pada tanggal tersebut, Anda juga harus memilih waktu pengembalian mobil.
                   </p>
                </div>
                <div class="step-content stp-2">
                   <i class='bx bx-calendar step-icon' ></i>
-                  <h3 class="step-title mb-3">Return Date</h3>
+                  <h3 class="step-title mb-3">Tanggal Kembali</h3>
                   <p class="step-desc">
-                     Select the date Choose when you will return the car.
+                    Pilih tanggal kapan Anda akan mengembalikan mobil.
                   </p>
                </div>
                <div class="step-content stp-3">
                    <i class='bx bx-calendar-star  step-icon' ></i>
-                  <h3 class="step-title mb-3">Book A Car</h3>
+                  <h3 class="step-title mb-3">Sewa Odong-Odong</h3>
                   <p class="step-desc">
-                     Book  the car you want,If the car you want is already booked,
-                     you can wait for your return or you can book another car.
+                     Pesan Odong-Odong yang Anda inginkan. Jika Odong-Odong yang Anda inginkan sudah dipesan, Anda bisa menunggu pengembaliannya atau memesan Odong-Odong lain.
                   </p>
                </div>
            </div>

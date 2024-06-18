@@ -106,7 +106,7 @@ export default{
             }
             },
             {
-            label: 'Car',
+            label: 'Model',
             field: 'car.Brande',
             type:'string',
              filterable: true,
@@ -121,7 +121,7 @@ export default{
 
             },
             {
-            label: 'Command By',
+            label: 'Ditambahkan oleh',
             field: 'user.name',
             type:'string',
              filterable: true,
@@ -131,7 +131,7 @@ export default{
             }
             },
              {
-            label: 'Amount',
+            label: 'Harga Sewa',
             field: 'PrixTTC',
              filterable: true,
             filterOptions: {
@@ -165,7 +165,7 @@ export default{
           },
         },
            {
-            label: 'Created_at',
+            label: 'Dibuat',
             field: 'created_at',
             type: 'date',
             dateInputFormat: 'yyyy-MM-dd',
@@ -178,7 +178,7 @@ export default{
         },
 
         {
-          label: 'Updated_at',
+          label: 'Diupdate',
           field: 'updated_at',
           type: 'date',
           dateInputFormat: 'yyyy-MM-dd',
@@ -222,14 +222,14 @@ export default{
                 page = 1;
             }
             this.url = `/api/command?page=${page}`
-            this.cardsdata[0].title= 'Commands'
+            this.cardsdata[0].title= 'Riwayat'
             this.cardsdata[0].icon= 'bx bx-file'
                  // send icons and titles to cards componenets
-             this.cardsdata[1].title= 'Companies'
+             this.cardsdata[1].title= 'Brand'
              this.cardsdata[1].icon= 'bx bx-category'
-             this.cardsdata[2].title= 'Users'
+             this.cardsdata[2].title= 'Pengguna'
              this.cardsdata[2].icon= 'bx bxs-user'
-             this.cardsdata[3].title= 'Cars'
+             this.cardsdata[3].title= 'Kendaraan'
              this.cardsdata[3].icon= 'bx bx-car'
             this.$store.dispatch('getData', this.url);
 
@@ -239,7 +239,7 @@ export default{
 
         // change prix day forma
         formatPrixFn: function(value) {
-        return value + ' MAD';
+        return ' Rp ' + value + 'per/hari';
         },
 
         // delete command function

@@ -9,7 +9,7 @@
                </router-link>
                <router-link v-else to="/"  class="nav_logo">
                 <i  class='bx bxs-car ' ></i>
-                <span   class="nav__logo-name">WeekCar</span>
+                <span   class="nav__logo-name">Odong-Odong</span>
                </router-link>
 
           <div class="nav_menu"  id="nav-menu">
@@ -23,13 +23,13 @@
             <a href="#steps" @click="Addactivelinkclass(1)" class="nav__link">
                 <i class='bx bxs-carousel' ></i>
                 <span class="nav__name">
-                    Steps
+                    Panduan
                 </span>
             </a>
             <a href="#cars" @click="Addactivelinkclass(2)" class="nav__link">
                 <i class='bx bxs-car-garage' ></i>
                 <span class="nav__name">
-                    Cars
+                    Odong - Odong
                 </span>
             </a>
 
@@ -38,7 +38,7 @@
             <a href="#contact" @click="Addactivelinkclass(3)" class="nav__link">
                 <i class='bx bx-envelope' ></i>
                 <span class="nav__name">
-                   Contact
+                   Kontak
                 </span>
             </a>
 
@@ -51,7 +51,7 @@
             <a v-else href="#" @click="Addactivelinkclass(4)" class="nav__link"  data-bs-toggle="modal" data-bs-target="#authmodal">
                 <i class='bx bxs-group' ></i>
                 <span class="nav__name">
-                    Join us
+                    Daftar
                 </span>
             </a>
 

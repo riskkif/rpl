@@ -1,12 +1,12 @@
 <template>
     <div class="home_section">
          <div class="home_desc">
-              <h1 class="desc_title mt-3">WeekCar Find Your Dream Car</h1>
-              <p class="desc mt-3">
-                Our company works in providing tourist car rental services. <br/>
-                We offer the best sports and classic cars that suit our valued customers
+              <h1 class="desc_title ">Booking kendaraan anda sekarang !</h1>
+              <p class="desc ">
+                Perusahaan kami bergerak dalam penyediaan layanan sewa mobil. <br/>
+                Kami menawarkan mobil sport dan klasik terbaik yang sesuai dengan pelanggan kami yang terhormat.
               </p>
-              <div class="desc_social  mt-3">
+              <div class="desc_social  mt-3 mb-5">
                 <a href="https://www.instagram.com/abderrahmane_amerrhi/" class="social_btn ig-icon"><i class='bx bxl-instagram'></i></a>
                 <a href="" class="social_btn lk-icon"><i class='bx bxl-linkedin ' ></i></a>
                 <a href="" class="social_btn github-icon"><i class='bx bxl-github ' ></i></a>
@@ -19,20 +19,21 @@
              </div>
 
          </div>
+         
          <!-- show form button  -->
          <i class='show-btn bx bxs-chevron-right'   @click="activeform"></i>
          <form  class="form bookform">
 
             <div class="input-box">
-                <span>Pick-Up Date</span>
+                <span>Tanggal Pinjam</span>
                   <input  type="date" v-model="BookinData.dateL">
             </div>
             <div class="input-box">
-                <span>Return Date</span>
+                <span>Tanggal Kembali</span>
                   <input  type="date" v-model="BookinData.dateR">
             </div>
 
-             <input type="button" class="btn mt-2 " value="submit" @click="sendBookDataToParent">
+             <input type="button" class="btn mt-2 " value="kirim" @click="sendBookDataToParent">
 
          </form>
     </div>

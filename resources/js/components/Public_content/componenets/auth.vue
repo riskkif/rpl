@@ -9,42 +9,42 @@
              <button type="button" class="btn-close" id="closeauthmodal" data-bs-dismiss="modal" aria-label="Close"></button>
             <!-- login form  -->
           <div class="login-container" v-if="loginform == true">
-             <h1 class="mb-3">Connection </h1>
+             <h1 class="mb-3">Login </h1>
              <div class="input_box mb-3">
                 <label for="email" >Email</label>
-                <input type="email" required id="email" v-model="user.email" placeholder="Entre youre email ">
+                <input type="email" required id="email" v-model="user.email" placeholder="Masukkan Email Anda">
              </div>
              <div class="input_box mb-3">
                 <label for="pass1" >Password</label>
-                <input type="password" required id="pass1"  v-model="user.password" placeholder="Entre your password">
+                <input type="password" required id="pass1"  v-model="user.password" placeholder="Masukkan Password Anda">
              </div>
              <div class="footer_box mb-3">
                 <button class="mb-2" @click="login">Login</button>
-                <span class="small-link" @click="showregister">I don't have an account, register</span>
+                <span class="small-link" @click="showregister">Belum Punya Akun?, Daftar Sekarang</span>
              </div>
           </div>
              <!-- register form  -->
           <div class="register-container" v-else>
-             <h1 class="mb-3">Create an account </h1>
+             <h1 class="mb-3">Buat Akun </h1>
              <div class="input_box mb-3">
                 <label for="name" >UserName</label>
-                <input type="text" required id="name"  v-model="user.name" placeholder="Entre youre name ">
+                <input type="text" required id="name"  v-model="user.name" placeholder="Masukkan Nama  ">
              </div>
              <div class="input_box mb-3">
                 <label for="email" >Email</label>
-                <input type="email" required id="email"  v-model="user.email" placeholder="Entre youre email ">
+                <input type="email" required id="email"  v-model="user.email" placeholder="Masukkan Email  ">
              </div>
              <div class="input_box mb-3">
                 <label for="pass" >Password</label>
-                <input type="password"  required v-model="user.password" id="pass" placeholder="Entre  password">
+                <input type="password"  required v-model="user.password" id="pass" placeholder="Masukkan Password ">
              </div>
              <div class="input_box mb-3">
-                <label for="pass2"  >R-Password</label>
-                <input type="password" required  v-model="user.password_confirmation" id="pass2" placeholder="Re-enter  password">
+                <label for="pass2"  >Password</label>
+                <input type="password" required  v-model="user.password_confirmation" id="pass2" placeholder="Masukkan ulang password">
              </div>
              <div class="footer_box mb-3">
-                <button  class="mb-2" @click="register">Register</button>
-                <span class="small-link" @click="showlogin">I have an account, login</span>
+                <button  class="mb-2" @click="register">Daftar</button>
+                <span class="small-link" @click="showlogin">Sudah Punya Akun?, login</span>
              </div>
           </div>
         </div>

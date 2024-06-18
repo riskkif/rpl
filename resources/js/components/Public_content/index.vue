@@ -101,7 +101,7 @@ export default {
             Swal.fire({
             position: 'center',
             icon: 'error',
-            title:  'Please enter all data before booking !',
+            title:  'Silahkan lengkapi data sebelum melakukan booking !',
             showConfirmButton: true,
             timer: 1500
             })
@@ -122,7 +122,7 @@ export default {
             Swal.fire({
             position: 'center',
             icon: 'error',
-            title:  'Please enter all data before booking !',
+            title:  'Silahkan lengkapi data sebelum melakukan booking !',
             showConfirmButton: true,
             timer: 1500
             })

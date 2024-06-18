@@ -32,7 +32,7 @@
             </div>
             </div>
 
-         <h1 class="b-title ">Our Cars</h1>
+         <h1 class="b-title ">Booking Sekarang</h1>
          <div class="cars-container " v-if="Cars.length >0 ">
              <div class="car-content " v-for="(item, index) in Cars" :key="index">
                   <img :src="item.image" alt="first Car Background" class="car_img" />
@@ -40,15 +40,15 @@
                      <span class="car-type"> <i class='bx bxs-gas-pump' ></i> {{item.type}} </span>
                      <span class="car-mf-company">{{item.company.title}}</span>
                      <span class="car-brande">{{item.Brande}}</span>
-                     <span class="car-j-prix "><span class="prix">{{item.prixJ}} DH</span>  /day</span>
+                     <span class="car-j-prix "><span class="prix">{{item.prixJ}} per hari</span>  /day</span>
 
-                     <button class="btn" @click="sendDataToparent(item)" v-if="logged != false"> Book car</button>
-                     <button class="btn" v-else  data-bs-toggle="modal" data-bs-target="#authmodal"> Book car</button>
+                     <button class="btn" @click="sendDataToparent(item)" v-if="logged != false"> Pilih</button>
+                     <button class="btn" v-else  data-bs-toggle="modal" data-bs-target="#authmodal"> Pilih</button>
                   </div>
              </div>
          </div>
          <div class="cars-container " v-else>
-                 <span>no car to show</span>
+                 <span>tidak ada kendaraan untuk ditampilkan</span>
          </div>
          <!-- pagination componnent  -->
          <div class="pagination-section">

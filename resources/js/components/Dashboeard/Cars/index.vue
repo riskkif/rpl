@@ -137,7 +137,7 @@ export default{
             }
             },
             {
-            label: 'Brande',
+            label: 'Model',
             field: 'Brande',
             type:'string',
              filterable: true,
@@ -147,7 +147,7 @@ export default{
             }
             },
             {
-            label: 'fuel',
+            label: 'Bahan Bakar',
             field: 'type',
              filterable: true,
             filterOptions: {
@@ -165,7 +165,7 @@ export default{
             },
             },
              {
-            label: 'Price day',
+            label: '  Harga Sewa',
             field: 'prixJ',
              filterable: true,
             filterOptions: {
@@ -175,7 +175,7 @@ export default{
             formatFn: this.formatPrixFn
             },
              {
-            label: 'MFK Company',
+            label: 'Brand',
             field: 'company.title',
              filterable: true,
             filterOptions: {
@@ -195,7 +195,7 @@ export default{
 
             },
            {
-            label: 'Created_at',
+            label: 'Dibuat',
             field: 'created_at',
             type: 'date',
             dateInputFormat: 'yyyy-MM-dd',
@@ -208,7 +208,7 @@ export default{
         },
 
         {
-          label: 'Updated_at',
+          label: 'Diupdate',
           field: 'updated_at',
           type: 'date',
           dateInputFormat: 'yyyy-MM-dd',
@@ -220,7 +220,7 @@ export default{
           },
         },
         {
-          label: 'Deleted_at',
+          label: 'Dihapus',
           field: 'deleted_att',
           type: 'date',
           dateInputFormat: 'yyyy-MM-dd',
@@ -262,14 +262,14 @@ export default{
         // get cars from db methode
         getActiveCars(){
             this.url = `/api/cars`
-            this.cardsdata[0].title= 'Active Cars'
+            this.cardsdata[0].title= 'Kendaraan'
             this.cardsdata[0].icon= 'bx bx-check-square'
               // send icons and titles to cards componenets
-             this.cardsdata[1].title= 'Companies'
+             this.cardsdata[1].title= 'Brand'
              this.cardsdata[1].icon= 'bx bx-category'
-             this.cardsdata[2].title= 'Users'
+             this.cardsdata[2].title= 'Pengguna'
              this.cardsdata[2].icon= 'bx bxs-user'
-             this.cardsdata[3].title= 'Orders'
+             this.cardsdata[3].title= 'Pesanan'
              this.cardsdata[3].icon= 'bx bx-file'
             this.$store.dispatch('getData', this.url);
             this.$forceUpdate();
@@ -278,14 +278,14 @@ export default{
         },
         getArchiveCars(){
             this.url = `/api/cars?type=archive`
-            this.cardsdata[0].title= 'Archive Cars'
+            this.cardsdata[0].title= 'Kendaraan Tearsip'
             this.cardsdata[0].icon= 'bx bx-archive'
             // send icons and titles to cards componenets
-             this.cardsdata[1].title= 'Companies'
+             this.cardsdata[1].title= 'Brand'
              this.cardsdata[1].icon= 'bx bx-category'
-             this.cardsdata[2].title= 'Users'
+             this.cardsdata[2].title= 'Pengguna'
              this.cardsdata[2].icon= 'bx bxs-user'
-             this.cardsdata[3].title= 'Orders'
+             this.cardsdata[3].title= 'Pesanan'
              this.cardsdata[3].icon= 'bx bx-file'
             this.$store.dispatch('getData', this.url);
             this.$forceUpdate();
@@ -309,7 +309,7 @@ export default{
         },
         // change prix day forma
         formatPrixFn: function(value) {
-        return value + ' MAD';
+        return ' Rp ' + value + 'per/hari';
         },
          // active archived row
         activerow(row){

@@ -1,20 +1,20 @@
 <template>
      <div class="container mt-3">
-        <h1 class="b-title c-title">Contact Us</h1>
+        <h1 class="b-title c-title">Kontak Kami</h1>
         <div class="contact-container ">
              <form  >
                    <div class="input-group mb-3">
-                        <input type="text" v-model="name" placeholder="Enter your name please" required>
+                        <input type="text" v-model="name" placeholder="Masukkkan Nama" required>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="email"  v-model="email" placeholder="Enter your email please" required />
+                        <input type="email"  v-model="email" placeholder="Masukkan Email" required />
                     </div>
 
                     <div class="input-group mb-3">
-                       <textarea v-model="message"   placeholder="Your Message" rows="10"></textarea>
+                       <textarea v-model="message"   placeholder="Pesan" rows="10"></textarea>
                     </div>
                     <div class="buttons-group">
-                        <button  type="button" @click="sendEmail"><i class="ri-send-plane-fill"></i> Send</button>
+                        <button  type="button" @click="sendEmail"><i class="ri-send-plane-fill"></i> kirim</button>
 
                     </div>
 
@@ -47,7 +47,7 @@ export default {
                     Swal.fire({
                     position: 'center',
                     icon: 'success',
-                    title: 'Message sent, please wait for a response.',
+                    title: 'Pesan Terkirim, Terima Kasih atas feedback Anda',
                     showConfirmButton: true,
                     timer: 1500
                     })
@@ -56,7 +56,7 @@ export default {
                     Swal.fire({
                     position: 'center',
                     icon: 'error',
-                    title: 'Please enter personal data in the fields.',
+                    title: 'Pesan Gagal Terkirim, Tolong isi semua kolom dengan benar!',
                     showConfirmButton: true,
                     timer: 1500
                     })

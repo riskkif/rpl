@@ -167,13 +167,13 @@ export default {
             }
             },
             {
-            label: 'Title',
+            label: 'Brand',
             field: 'title',
             type:'string',
              filterable: true,
             filterOptions: {
                 enabled: true,
-                placeholder: "Filter By title"
+                placeholder: "Filter By brand"
             }
             },
             {
@@ -183,7 +183,7 @@ export default {
 
             },
            {
-            label: 'Created_at',
+            label: 'Dibuat',
             field: 'created_at',
             type: 'date',
             dateInputFormat: 'yyyy-MM-dd',
@@ -195,7 +195,7 @@ export default {
           },
         },
         {
-          label: 'Updated_at',
+          label: 'Diupdate',
           field: 'updated_at',
           type: 'date',
           dateInputFormat: 'yyyy-MM-dd',
@@ -207,7 +207,7 @@ export default {
           },
         },
         {
-          label: 'Deleted_at',
+          label: 'Dihapus',
           field: 'deleted_att',
           type: 'date',
           dateInputFormat: 'yyyy-MM-dd',
@@ -275,14 +275,14 @@ export default {
          getActiveCompanies(){
             this.cardsdata[0].icon = '';
             this.url = `/api/companies`
-            this.cardsdata[0].title= 'Active MFC CMP'
+            this.cardsdata[0].title= 'Brand'
             this.cardsdata[0].icon= 'bx bx-check-square'
                  // send icons and titles to cards componenets
-             this.cardsdata[1].title= 'Cars'
+             this.cardsdata[1].title= 'Kendaraan'
              this.cardsdata[1].icon= 'bx bxs-car'
-             this.cardsdata[2].title= 'Users'
+             this.cardsdata[2].title= 'Pengguna'
              this.cardsdata[2].icon= 'bx bxs-user'
-             this.cardsdata[3].title= 'Orders'
+             this.cardsdata[3].title= 'Pesanan'
              this.cardsdata[3].icon= 'bx bx-file'
             this.$store.dispatch('getData', this.url);
             this.$forceUpdate();

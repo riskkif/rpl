@@ -1,7 +1,7 @@
 <template>
          <div class="footer ">
             <span class="footer__copy">
-                &#169; by Abderrahmane Amerrhi
+                &#169; Digunakan untuk model tugas RPL
             </span>
         </div>
 </template>
