@@ -14,14 +14,14 @@
                   <i class='bx bx-calendar step-icon' ></i>
                   <h3 class="step-title mb-3">Tanggal Pinjam</h3>
                   <p class="step-desc">         
-                    Pilih tanggal yang Anda inginkan untuk mobil. Jika tidak tersedia pada tanggal tersebut, Anda juga harus memilih waktu pengembalian mobil.
+                    Pilih tanggal yang Anda inginkan untuk odong-odong. Jika tidak tersedia pada tanggal tersebut, Anda juga harus memilih waktu pengembalian mobil.
                   </p>
                </div>
                <div class="step-content stp-2">
                   <i class='bx bx-calendar step-icon' ></i>
                   <h3 class="step-title mb-3">Tanggal Kembali</h3>
                   <p class="step-desc">
-                    Pilih tanggal kapan Anda akan mengembalikan mobil.
+                    Pilih tanggal kapan Anda akan mengembalikan odong-odong.
                   </p>
                </div>
                <div class="step-content stp-3">

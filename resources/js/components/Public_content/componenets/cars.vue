@@ -17,7 +17,7 @@
         </swiper-slide >
 
         </swiper> -->
-        <div class="swiper mySwiper mb-3">
+        <!-- <div class="swiper mySwiper mb-3">
             <div class="swiper-wrapper">
                      <div class="swiper-slide"  v-for="(item, index) in Companies" :key="index" >
                         <a @click="getCarsByCMP(item.id)" style="cursor: pointer" title="Get cars by mf company">
@@ -30,7 +30,7 @@
                      </div>
 
             </div>
-            </div>
+            </div> -->
 
          <h1 class="b-title ">Booking Sekarang</h1>
          <div class="cars-container " v-if="Cars.length >0 ">
@@ -38,9 +38,9 @@
                   <img :src="item.image" alt="first Car Background" class="car_img" />
                   <div class="car-data">
                      <span class="car-type"> <i class='bx bxs-gas-pump' ></i> {{item.type}} </span>
-                     <span class="car-mf-company">{{item.company.title}}</span>
-                     <span class="car-brande">{{item.Brande}}</span>
-                     <span class="car-j-prix "><span class="prix">{{item.prixJ}} per hari</span>  /day</span>
+                     <span class="car-mf-company">Pemilik : {{item.company.title}}</span>
+                     <span class="car-brande">Nama/Model : {{item.Brande}}</span>
+                     <span class="car-j-prix ">Harga Sewa : <span class="prix">Rp. {{item.prixJ}} </span>  /hari</span>
 
                      <button class="btn" @click="sendDataToparent(item)" v-if="logged != false"> Pilih</button>
                      <button class="btn" v-else  data-bs-toggle="modal" data-bs-target="#authmodal"> Pilih</button>

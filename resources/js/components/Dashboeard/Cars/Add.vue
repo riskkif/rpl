@@ -6,55 +6,55 @@
     <div class="modal-dialog">
         <div class="modal-content">
         <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Add new Car</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Tambah Kendaraan</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
            <form enctype="multipart/form-data" >
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Brande</label>
-                    <input type="text" v-model="Car.Brande" placeholder="Enter The Car Model" class="form-control"   required>
+                    <label for="exampleInputEmail1" class="form-label">Model/Nama</label>
+                    <input type="text" v-model="Car.Brande" placeholder="Masukkan nama/model kendaraan" class="form-control"   required>
                 </div>
                 <div class="mb-3 input-group">
-                    <input type="number" class="form-control"  v-model="Car.prixJ" placeholder="Entre the Price by Day" aria-label="Dollar amount (with dot and two decimal places)">
-                    <span class="input-group-text">MAD</span>
+                    <input type="number" class="form-control"  v-model="Car.prixJ" placeholder="Masukkan harga sewa" aria-label="Dollar amount (with dot and two decimal places)">
+                    <span class="input-group-text">/hari</span>
                 </div>
                 <div class="mb-3">
                     <div class="form-check">
                         <input class="form-check-input"  v-model="Car.dispo" type="radio" value="1" name="flexRadioDefault" id="flexRadioDefault1">
                         <label class="form-check-label" for="flexRadioDefault1">
-                            available
+                            tersedia
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input"  v-model="Car.dispo" type="radio" value="0" name="flexRadioDefault" id="flexRadioDefault2" checked>
                         <label class="form-check-label" for="flexRadioDefault2">
-                            non available
+                            tdiak tersedia
                         </label>
                     </div>
 
                 </div>
 
                 <div class="mb-3">
-                    <label  class="form-label">fuel Type :</label>
+                    <label  class="form-label">Bahan Bakar :</label>
                     <div class="form-check">
-                        <input class="form-check-input"  v-model="Car.type" type="radio" value="Diesel fuel" name="fuel" id="flexRadiofuel1" checked>
+                        <input class="form-check-input"  v-model="Car.type" type="radio" value="Bensin" name="fuel" id="flexRadiofuel1" checked>
                         <label class="form-check-label" for="flexRadiofuel1">
-                            Diesel fuel
+                            Bensin
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input"  v-model="Car.type" type="radio" value="Gasoline" name="fuel" id="flexRadiofuel2" checked>
+                        <input class="form-check-input"  v-model="Car.type" type="radio" value="Listrik" name="fuel" id="flexRadiofuel2" checked>
                         <label class="form-check-label" for="flexRadiofuel2">
-                           Gasoline
+                           Listrik
                         </label>
                     </div>
 
                 </div>
 
                 <div class="mb-3">
-                     <label for="select" class="form-label">Select a Car MFK Company:</label>
-                     <select class="form-select" id="select" aria-label="Default select example" v-model="Car.company_id" >
+                     <label for="select" class="form-label">Nama Pemilik:</label>
+                     <select class="form-select" id="select" aria-label="Masukkan nama pemilik" v-model="Car.company_id" >
                          <option :value="data.id" v-for="(data,index) in Companies" :key="index" >{{data.title}}</option>
                    </select>
                 </div>
@@ -62,7 +62,7 @@
 
 
                 <div class="mb-3">
-                    <label for="formFile" class="form-label">Car Image</label>
+                    <label for="formFile" class="form-label">Gambar</label>
                     <input class="form-control" @change="onImageChaneg" type="file" id="formFile">
                 </div>
 

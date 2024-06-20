@@ -106,7 +106,7 @@ export default{
             }
             },
             {
-            label: 'Model',
+            label: 'Pemilik',
             field: 'car.Brande',
             type:'string',
              filterable: true,
@@ -121,7 +121,7 @@ export default{
 
             },
             {
-            label: 'Ditambahkan oleh',
+            label: 'Disewa oleh',
             field: 'user.name',
             type:'string',
              filterable: true,
@@ -225,7 +225,7 @@ export default{
             this.cardsdata[0].title= 'Riwayat'
             this.cardsdata[0].icon= 'bx bx-file'
                  // send icons and titles to cards componenets
-             this.cardsdata[1].title= 'Brand'
+             this.cardsdata[1].title= 'Pemilik'
              this.cardsdata[1].icon= 'bx bx-category'
              this.cardsdata[2].title= 'Pengguna'
              this.cardsdata[2].icon= 'bx bxs-user'
@@ -239,7 +239,7 @@ export default{
 
         // change prix day forma
         formatPrixFn: function(value) {
-        return ' Rp ' + value + 'per/hari';
+        return ' Rp ' + value + '/hari';
         },
 
         // delete command function

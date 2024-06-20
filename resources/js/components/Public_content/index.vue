@@ -85,14 +85,14 @@ export default {
                 Swal.fire({
                 position: 'center',
                 icon: 'error',
-                title:  'Pick-Up Date should be bigger than return date',
+                title:  'Format tanggal yang anda masukkan salah',
                 timer: 1500
                 })
             }else{
                 Swal.fire({
                 position: 'center',
                 icon: 'success',
-                title:  'Chose a car now',
+                title:  'Silahkan pilih kendaraan',
                 timer: 1500
                 })
             }
@@ -101,7 +101,7 @@ export default {
             Swal.fire({
             position: 'center',
             icon: 'error',
-            title:  'Silahkan lengkapi data sebelum melakukan booking !',
+            title:  'Silahkan masukkan tanggal sebelum melakukan booking !',
             showConfirmButton: true,
             timer: 1500
             })
@@ -122,7 +122,7 @@ export default {
             Swal.fire({
             position: 'center',
             icon: 'error',
-            title:  'Silahkan lengkapi data sebelum melakukan booking !',
+            title:  'Silahkan masukkan tanggal sebelum melakukan booking !',
             showConfirmButton: true,
             timer: 1500
             })

@@ -5,17 +5,17 @@
     <div class="modal-dialog">
         <div class="modal-content">
         <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Add new Company</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Tambahkan Pemilik</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
            <form enctype="multipart/form-data" >
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Title</label>
-                    <input type="text" v-model="Company.title" placeholder="Enter The Barnde Title" class="form-control"   required>
+                    <label for="exampleInputEmail1" class="form-label">Nama</label>
+                    <input type="text" v-model="Company.title" placeholder="Masukkan nama pemilik" class="form-control"   required>
                 </div>
                 <div class="mb-3">
-                    <label for="formFile" class="form-label">Company Logo</label>
+                    <label for="formFile" class="form-label">Profil Pemilik</label>
                     <input class="form-control" @change="onImageChaneg" type="file" id="formFile">
                 </div>
 

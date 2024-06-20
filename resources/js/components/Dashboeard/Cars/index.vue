@@ -18,10 +18,10 @@
                            <i class='bx bx-check-square archive-active-icon'></i>
                           </a>
                          <!-- import file excel with data  && send this data to db  -->
-                         <input type="file" id="file-ex"   class="btn primary-btn" @change="onFileChange" >
-                          <label class="btn primary-btn" title="Import Data from Excel"  for="file-ex"><i class='bx bx-up-arrow-alt'></i> Import</label>
+                         <!-- <input type="file" id="file-ex"   class="btn primary-btn" @change="onFileChange" >
+                          <label class="btn primary-btn" title="Import Data from Excel"  for="file-ex"><i class='bx bx-up-arrow-alt'></i> Import</label> -->
                         <!-- export selected  data to excel  -->
-                         <vue-excel-xlsx
+                         <!-- <vue-excel-xlsx
                              title="Export Data To Excel"
                              class="btn primary-btn"
                             :data="ExpTable"
@@ -31,7 +31,7 @@
                             :sheet-name="'sheetname'"
                             >
                             <i class='bx bx-down-arrow-alt bx-tada bx-flip-horizontal' ></i> Export
-                        </vue-excel-xlsx>
+                        </vue-excel-xlsx> -->
                         <!-- add new row in db -->
                         <a href="#" title="Add New Data" data-bs-toggle="modal" data-bs-target="#AddModal"  class="btn primary-btn">
                             <i class="fas fa-plus"></i>
@@ -137,7 +137,7 @@ export default{
             }
             },
             {
-            label: 'Model',
+            label: 'Pemilik',
             field: 'Brande',
             type:'string',
              filterable: true,
@@ -175,7 +175,7 @@ export default{
             formatFn: this.formatPrixFn
             },
              {
-            label: 'Brand',
+            label: 'Pemilik',
             field: 'company.title',
              filterable: true,
             filterOptions: {
@@ -265,7 +265,7 @@ export default{
             this.cardsdata[0].title= 'Kendaraan'
             this.cardsdata[0].icon= 'bx bx-check-square'
               // send icons and titles to cards componenets
-             this.cardsdata[1].title= 'Brand'
+             this.cardsdata[1].title= 'Pemilik'
              this.cardsdata[1].icon= 'bx bx-category'
              this.cardsdata[2].title= 'Pengguna'
              this.cardsdata[2].icon= 'bx bxs-user'
@@ -281,7 +281,7 @@ export default{
             this.cardsdata[0].title= 'Kendaraan Tearsip'
             this.cardsdata[0].icon= 'bx bx-archive'
             // send icons and titles to cards componenets
-             this.cardsdata[1].title= 'Brand'
+             this.cardsdata[1].title= 'Pemilik'
              this.cardsdata[1].icon= 'bx bx-category'
              this.cardsdata[2].title= 'Pengguna'
              this.cardsdata[2].icon= 'bx bxs-user'
@@ -309,7 +309,7 @@ export default{
         },
         // change prix day forma
         formatPrixFn: function(value) {
-        return ' Rp ' + value + 'per/hari';
+        return ' Rp ' + value + '/hari';
         },
          // active archived row
         activerow(row){

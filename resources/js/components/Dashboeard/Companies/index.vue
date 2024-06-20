@@ -23,10 +23,10 @@
                            <i class='bx bx-check-square '></i>
                           </a>
                          <!-- import file excel with data  && send this data to db  -->
-                         <input type="file" id="file-ex"   class="btn primary-btn" @change="onFileChange" >
-                          <label class="btn primary-btn" title="Import Data from Excel"  for="file-ex"><i class='bx bx-up-arrow-alt'></i> Import</label>
+                         <!-- <input type="file" id="file-ex"   class="btn primary-btn" @change="onFileChange" >
+                          <label class="btn primary-btn" title="Import Data from Excel"  for="file-ex"><i class='bx bx-up-arrow-alt'></i> Import</label> -->
                         <!-- export selected  data to excel  -->
-                         <vue-excel-xlsx
+                         <!-- <vue-excel-xlsx
                              title="Export Data To Excel"
                              class="btn primary-btn"
                             :data="ExpTable"
@@ -36,7 +36,7 @@
                             :sheet-name="'sheetname'"
                             >
                             <i class='bx bx-down-arrow-alt bx-tada bx-flip-horizontal' ></i> Export
-                        </vue-excel-xlsx>
+                        </vue-excel-xlsx> -->
                         <!-- add new row in db -->
                         <a href="#" title="Add New Data" data-bs-toggle="modal" data-bs-target="#AddModal"  class="btn primary-btn">
                             <i class="fas fa-plus"></i>
@@ -167,7 +167,7 @@ export default {
             }
             },
             {
-            label: 'Brand',
+            label: 'Pemilik',
             field: 'title',
             type:'string',
              filterable: true,
@@ -275,7 +275,7 @@ export default {
          getActiveCompanies(){
             this.cardsdata[0].icon = '';
             this.url = `/api/companies`
-            this.cardsdata[0].title= 'Brand'
+            this.cardsdata[0].title= 'Pemilik'
             this.cardsdata[0].icon= 'bx bx-check-square'
                  // send icons and titles to cards componenets
              this.cardsdata[1].title= 'Kendaraan'

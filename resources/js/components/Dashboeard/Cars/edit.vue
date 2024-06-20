@@ -15,48 +15,48 @@
                  </div>
                    <form class="mt-4" enctype="multipart/form-data">
                         <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Brande</label>
-                            <input type="text" v-model="Car.Brande" placeholder="Enter The Car Model" class="form-control"   required>
+                            <label for="exampleInputEmail1" class="form-label">Model</label>
+                            <input type="text" v-model="Car.Brande" placeholder="Masukkan Model kendaraan" class="form-control"   required>
                         </div>
                         <div class="mb-3 input-group">
                             <input type="number" class="form-control"  v-model="Car.prixJ" placeholder="Entre the Price by Day" aria-label="Dollar amount (with dot and two decimal places)">
-                            <span class="input-group-text">MAD</span>
+                            <span class="input-group-text">Rp</span>
                         </div>
                         <div class="mb-3">
                             <div class="form-check">
                                 <input class="form-check-input"  v-model="Car.dispo" type="radio" value="1" name="flexRadioDefault" id="flexRadioDefault1">
                                 <label class="form-check-label" for="flexRadioDefault1">
-                                    available
+                                    tersedia
                                 </label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input"  v-model="Car.dispo" type="radio" value="0" name="flexRadioDefault" id="flexRadioDefault2" checked>
                                 <label class="form-check-label" for="flexRadioDefault2">
-                                    non available
+                                   tidak tersedia
                                 </label>
                             </div>
 
                         </div>
 
                         <div class="mb-3">
-                            <label  class="form-label">fuel Type :</label>
+                            <label  class="form-label">bahan bakar :</label>
                             <div class="form-check">
-                                <input class="form-check-input"  v-model="Car.type" type="radio" value="Diesel fuel" name="fuel" id="flexRadiofuel1" checked>
+                                <input class="form-check-input"  v-model="Car.type" type="radio" value="Bensin" name="fuel" id="flexRadiofuel1" checked>
                                 <label class="form-check-label" for="flexRadiofuel1">
-                                    Diesel fuel
+                                    Bensin
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input"  v-model="Car.type" type="radio" value="Gasoline" name="fuel" id="flexRadiofuel2" checked>
+                                <input class="form-check-input"  v-model="Car.type" type="radio" value="Listrik" name="fuel" id="flexRadiofuel2" checked>
                                 <label class="form-check-label" for="flexRadiofuel2">
-                                Gasoline
+                                Listrik
                                 </label>
                             </div>
 
                         </div>
 
                         <div class="mb-3">
-                            <label for="select" class="form-label">Select a Car MFK Company:</label>
+                            <label for="select" class="form-label">Nama Pemilik:</label>
                             <select class="form-select" id="select" aria-label="Default select example" v-model="Car.company_id" >
                                 <option :value="data.id" v-for="(data,index) in Companies" :key="index" >{{data.title}}</option>
                         </select>
@@ -65,7 +65,7 @@
 
 
                         <div class="mb-3">
-                            <label for="formFile" class="form-label">Car Image</label>
+                            <label for="formFile" class="form-label">Gambar</label>
                             <input class="form-control" @change="onImageChaneg" type="file" id="formFile">
                         </div>
 

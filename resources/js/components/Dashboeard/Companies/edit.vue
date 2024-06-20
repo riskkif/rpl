@@ -15,11 +15,11 @@
                  </div>
                    <form class="mt-4" enctype="multipart/form-data">
                         <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Title :</label>
+                            <label for="exampleInputEmail1" class="form-label">Nama :</label>
                             <input type="text" v-model="Company.title"  placeholder="Enter The Barnde Title" class="my-input"   required>
                         </div>
                         <div class="mb-3">
-                            <label for="formFile" class="form-label">Company Logo</label>
+                            <label for="formFile" class="form-label">Profil</label>
                             <input class="form-control" @change="onImageChaneg" type="file" id="formFile">
                         </div>
 

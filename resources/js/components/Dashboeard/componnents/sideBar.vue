@@ -21,15 +21,15 @@
 
                     <a href="/index" class="nav__link">
                         <i class='bx bx-show-alt nav__icon'></i>
-                        <span class="nav__name">Halaman Booking</span>
+                        <span class="nav__name">Landing Page</span>
                     </a>
                         <router-link :to="{name : 'Companies'}"  class="nav__link">
                             <i class='bx bxs-category bx-rotate-90 mr-1' style="margin-right: 10px !important" ></i>
-                            <span class="nav__name" >Brand / Company</span>
+                            <span class="nav__name" >Data Pemilik</span>
                         </router-link>
                           <router-link :to="{name : 'Cars'}"  class="nav__link">
                             <i class='bx  bx-car  mr-1' style="margin-right: 10px !important" ></i>
-                            <span class="nav__name" >Model Kendaraan</span>
+                            <span class="nav__name" >Data Kendaraan</span>
                         </router-link>
                          <router-link :to="{name : 'Commands'}"  class="nav__link">
                             <i class='bx  bx-command  mr-1' style="margin-right: 10px !important" ></i>
